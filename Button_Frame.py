@@ -27,7 +27,7 @@ class Button_Frame_Class(tk.Frame):
         one_button = tk.Button(self, text='Press This', command=lambda: self.default_button_pressed())
         one_button.grid(row=this_row, column=1)
 
-        third_button = tk.Button(self, name="zoom_button", text='Zoom In', command=lambda: self.zoom_in(1))
+        third_button = tk.Button(self, name="zoom_button", text='Zoom In', command=lambda: self.button_pressed())
         third_button.grid(row=this_row, column=3)
 
         this_row = this_row + 1
